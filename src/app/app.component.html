@@ -1,0 +1,1223 @@
+<head>
+  ...
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="index-page">
+<header id="header" [class.header-show]="isHeaderVisible" class="header dark-background d-flex flex-column justify-content-center">
+  <i class="header-toggle d-xl-none bi bi-list"
+      [class.bi-list]="!isHeaderVisible"
+      [class.bi-x]="isHeaderVisible"
+      (click)="toggleHeader()"></i>
+
+  <div class="header-container d-flex flex-column align-items-start">
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#home" class="active" (click)="closeHeader()"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about" (click)="closeHeader()"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills" (click)="closeHeader()"><i class="bi bi-award navicon"></i> Skills</a></li>
+        <li><a href="#resume" (click)="closeHeader()"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#contact" (click)="closeHeader()"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="https://linkedin.com/in/sardar-baloch" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </div>
+
+</header>
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+
+    <div class="background-elements">
+      <div class="bg-circle circle-1"></div>
+      <div class="bg-circle circle-2"></div>
+    </div>
+
+    <div class="hero-content">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-text">
+              <h1>Port<span class="accent-text">folio</span></h1>
+              <h2>Sardar Rayyan Baloch</h2>
+              <p class="lead">I'm a <span class="typed" data-typed-items="Software Engineer, Full Stack Developer, Frontend Developer, Backend Developer"></span></p>
+              <p class="description">Passionate about delivering high-quality, scalable, and user-centric digital solutions. Skilled in bridging the gap between innovative design and robust development, I specialize in crafting seamless applications from concept to deployment. Committed to turning complex ideas into elegant, functional products that drive results.</p>
+
+              <div class="hero-actions">
+                <a href="#resume" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
+
+              <div class="social-links">
+                <a href="#"><i class="bi bi-dribbble"></i></a>
+                <a href="#"><i class="bi bi-behance"></i></a>
+                <a href="https://github.com/sardar-baloch" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/sardar-baloch" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="profile-container">
+                <div class="profile-background"></div>
+                <img src="assets/img/profile/profile-image-1.webp" alt="Alexander Chen" class="profile-image">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section><!-- /Hero Section -->
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row">
+        <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-image">
+                <img src="assets/img/profile/profile-image-2.webp" alt="Profile Image" class="img-fluid">
+              </div>
+              <div class="profile-badge">
+                <i class="bi bi-check-circle-fill"></i>
+              </div>
+            </div>
+
+            <div class="profile-content">
+              <h3>Sardar Rayyan Baloch</h3>
+              <p class="profession">Full Stack Software Engineer</p>
+
+              <div class="contact-links">
+                <a href="mailto:rynkhn4@gmail.com" class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  rynkhn4@gmail.com
+                </a>
+                <a href="tel:+491794394022" class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  +49 179 4394022
+                </a>
+                <a href="#" class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  Koblenz, Germany
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-content">
+            <div class="section-header">
+              <span class="badge-text">Get to Know Me</span>
+              <h2>Turning Ideas into Seamless Digital Experiences</h2>
+            </div>
+
+            <div class="description">
+              <p>Passionate full stack software engineer driven to create innovative, scalable, and user-centric solutions. I enjoy transforming ideas into seamless digital experiences that blend design elegance with technical excellence.</p>
+
+              <p> I thrive on bridging the gap between innovative design and powerful functionality, building applications that not only work seamlessly but also deliver exceptional user experiences. </p>
+            </div>
+
+            <!-- <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div> -->
+
+            <div class="details-grid">
+              <div class="detail-row">
+                <div class="detail-item">
+                  <span class="detail-label">Specialization</span>
+                  <span class="detail-value">Full Stack Software Engineer</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Experience Level</span>
+                  <span class="detail-value">Professional</span>
+                </div>
+              </div>
+              <div class="detail-row">
+                <div class="detail-item">
+                  <span class="detail-label">Education</span>
+                  <span class="detail-value">Software Engineering</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Languages</span>
+                  <span class="detail-value">English, German, Urdu, Hindi, Punjabi</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-section">
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-download"></i>
+                Download Resume
+              </a>
+              <a href="#" class="btn btn-outline">
+                <i class="bi bi-chat-dots"></i>
+                Let's Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /About Section -->
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Skills</h2>
+      <p>Full stack engineer skilled in building scalable, high-performance web applications.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <h3>Front-end Development</h3>
+            <div class="skills-animation">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>Angular</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Experienced in Angular architecture, components, services, and state management</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>TypeScript</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Proficient in TypeScript, ES6+, and strongly-typed front-end development</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>HTML & CSS</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Expert in semantic HTML5, responsive layouts, and modern CSS3 techniques</div>
+              </div>
+            </div>
+          </div><!-- End Frontend Skills -->
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+            <h3>Back-end Development</h3>
+            <div class="skills-animation">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>.NET</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Proficient in building robust back-end applications with ASP.NET MVC and Web API</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>C#</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Strong knowledge of C# programming for enterprise-level applications</div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>Database</h4>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="skill-tooltip">Expertise in database design, query optimization, and complex queries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+            <h3>Development Tools</h3>
+            <div class="skills-animation">
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Visual Studio</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>DevOps & CI/CD</span>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Visual Studio Code</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Azure DevOps</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Rider</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                   <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>GitHub</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Eclipse</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Bit Bucket</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Postman</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Docker</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Swagger UI</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>JIRA</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Jaws (Screen Reading Tool)</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Confluence</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>SonarQube</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                    <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>MS Teams</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Git Kraken</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                   <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Slack</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="row">
+                  <div style="margin-bottom: 20px;" class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>GitHub Desktop</span>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                   <div class="col-lg-6">
+                    <div class="d-flex justify-content-between">
+                      <span>Clockify</span>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End Frontend Skills -->
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+            <h3>Languages, Frameworks & Databases</h3>
+            <div class="skills-animation">
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Java</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>.Net Framework</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>C++</span>
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>REST API</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>JavaScript</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Azure Cloud</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Python</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Amazon AWS</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>PHP</span>
+                        <span class="skill-percentage">60%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Scss/Sass</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Matlab</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Bootstrap</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>MS SQL</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Tailwind</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>MySQL</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Allianz NDBX</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>GraphQL</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Font Awesome</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>Postgres</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>DevExpress</span>
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="row">
+                    <div style="margin-bottom: 20px;" class="col-lg-6">
+                      <!-- <div class="d-flex justify-content-between">
+                        <span>.Net Framework</span>
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div> -->
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="d-flex justify-content-between">
+                        <span>AG Charts</span>
+                        <span class="skill-percentage">70%</span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </section><!-- /Skills Section -->
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Resume</h2>
+      <p>Experienced full stack engineer specializing in designing, developing, and deploying scalable, high-performance, and user-focused web applications that seamlessly blend innovative design with robust functionality.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <!-- Left column with summary and contact -->
+        <div class="col-lg-4">
+          <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+            <div class="profile-img mb-4">
+              <img src="assets/img/profile/profile-image-2.webp" alt="Profile" class="img-fluid rounded">
+            </div>
+
+            <h3>Professional Summary</h3>
+            <p>Driven full stack engineer skilled in developing scalable, high-performance applications, passionate about leveraging modern technologies to create innovative, user-centric solutions that address complex business needs.</p>
+
+            <h3 class="mt-4">Contact Information</h3>
+            <ul class="contact-info list-unstyled">
+              <li><i class="bi bi-geo-alt"></i> Herberichstraße 56, 56070 Koblenz</li>
+              <li><i class="bi bi-envelope"></i> rynkhn4@gmail.com</li>
+              <li><i class="bi bi-phone"></i> +49 179 4394022</li>
+              <li><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/sardar-baloch" target="_blank">linkedin.com/in/sardar-baloch</a></li>
+            </ul>
+
+            <div class="skills-animation mt-4">
+              <h3>Technical Skills</h3>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Front-end Development</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Back-end Development</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Database Management</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Project Management</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px;" class="skills-animation mt-4">
+              <h3>Language Skills</h3>
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>English (C1)</span>
+                  <span>Fluent User</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>German (B1)</span>
+                  <span>Intermediate level</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Urdu</span>
+                  <span>Native</span>
+                  <span>100%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Hindi</span>
+                  <span>Fluent</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Punjabi</span>
+                  <span>Fluent</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right column with experience and education -->
+        <div class="col-lg-8 ps-4 ps-lg-5">
+          <!-- Experience Section -->
+          <div class="resume-section" data-aos="fade-up">
+            <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Full Stack Software Engineer</h4>
+              <h5>2023 - Present</h5>
+              <p class="company"><i class="bi bi-building"></i> Novartum GmbH & Co. Holding KG, Fürth (Germany)</p>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">Projects for Finance & Insurance Business (Client - Allianz ABV)</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Expert Documentation Portal (RCU / IDA)</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Inbound Managment Suite (IVR)</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Call Center Application (TKH)</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Christmas Package Convey (WPK)</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Central Project Portfolio Management (ZPPM)</p>
+                <h6 style="padding-top: 10px; padding-bottom: 10px;">Responsibilities & Achievements:</h6>
+                <ul>
+                  <li>Designed and developed enterprise-level Angular applications serving 1,000+ internal users in finance and insurance environments.</li>
+                  <li>Built scalable backend services and RESTful APIs using C# and ASP.NET Core.</li>
+                  <li>Optimized MS SQL Server databases and queries to improve system performance and reliability.</li>
+                  <li>Implemented automated CI/CD pipelines using Azure DevOps and deployed solutions on Microsoft Azure.</li>
+                  <li>Ensured WCAG-compliant accessibility standards to deliver inclusive, user-friendly interfaces.</li>
+                  <li>Developed and maintained unit tests, supporting high-quality QA and release processes.</li>
+                  <li>Actively collaborated in Agile Scrum teams, participating in sprint planning, reviews, and code evaluations.</li>
+                  <li>Contributed to system modernization initiatives, enhancing application performance, security, and maintainability.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>2022 - 2023</h5>
+              <p class="company"><i class="bi bi-building"></i> devterm IT Solutions GmbH, Stuttgart (Germany)</p>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">Project:</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Airboard (Suggester System for Insurance Company - Air GmbH)</p>
+                <h6 style="padding-top: 10px; padding-bottom: 10px;">Responsibilities & Achievements:</h6>
+                <ul>
+                  <li>Developed responsive and reusable Angular frontend components and scalable .NET backend services.</li>
+                  <li>Designed, implemented, and maintained PostgreSQL databases to support high-performance applications.</li>
+                  <li>Deployed, monitored, and maintained cloud-based solutions on AWS, ensuring system stability and security.</li>
+                  <li>Implemented automated unit tests and collaborated closely with QA teams to improve software quality.</li>
+                  <li>Contributed to system optimization, bug fixing, and feature enhancements in Agile environments.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer (Full Stack)</h4>
+              <h5>2019 - 2022</h5>
+              <p class="company"><i class="bi bi-building"></i> maxINtime GmbH, Koblenz (Germany)</p>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">Project:</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> QMSpot (Quality Management System)</p>
+                <h6 style="padding-top: 10px; padding-bottom: 10px;">Responsibilities & Achievements:</h6>
+                <ul>
+                  <li>Built and maintained scalable full-stack applications using Angular and RESTful .NET backend services.</li>
+                  <li>Designed and optimized MS SQL Server databases and integrated solutions with Microsoft Azure cloud infrastructure.</li>
+                  <li>Improved application performance, reliability, and security through continuous code optimization.</li>
+                  <li>Actively participated in code reviews, testing cycles, and Agile Scrum ceremonies.</li>
+                  <li>Supported end-to-end feature development from requirement analysis to production deployment.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Developer (Internee)</h4>
+              <h5>2016</h5>
+              <p class="company"><i class="bi bi-building"></i> Punjab Saaf Pani Company, Government of Punjab, Bahawalpur (Pakistan)</p>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">Responsibilities & Achievements:</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Internal Management System</p>
+                <h6 style="padding-top: 10px; padding-bottom: 10px;">Responsibilities & Achievements:</h6>
+                <ul>
+                  <li>Supported the development, testing, and deployment of internal government software systems.</li>
+                  <li>Assisted in database administration, system maintenance, and IT operations.</li>
+                  <li>Collaborated with senior developers to improve system stability and usability.</li>
+                  <li>Gained hands-on experience in software lifecycle management and enterprise IT environments.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <h4>Student (Bachelors of Engineering)</h4>
+              <h5>2017</h5>
+              <p class="company"><i class="bi bi-building"></i> University of Engineering & Technology, Taxila (Pakistan)</p>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">Final Year Project:</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Automated Parking Management System</p>
+                <p>Built to Facilitate the traditional parking systems by making complete Human free Parking
+                  Management System.</p>
+                <h6 style="padding-top: 10px; padding-bottom: 10px;">Activities:</h6>
+                <ul>
+                  <li>Includes friendly user interface as Display for Driver</li>
+                  <li>Includes full guidance System for Driver</li>
+                  <li>Includes full automation of entry and exit</li>
+                  <li>Includes record of entry, exit, vehicle number, timings, and picture</li>
+                  <li>Includes security by generating and scanning of QR codes</li>
+                </ul>
+              </div>
+              <div style="padding-left: 20px;">
+                <h6 style="padding-bottom: 10px;">List of Some Semester Projects:</h6>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Media Player</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Tic Tac Toe Game</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Food Recipe Website</p>
+                <p class="company"><i class="bi bi-clipboard-data"></i> Android Barcode Reader through Camera Application</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Education Section -->
+          <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+            <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+            <div class="resume-item">
+              <h4>Master of Science in Web & Data Science</h4>
+              <h5>2019</h5>
+              <p class="company"><i class="bi bi-building"></i> Universität Koblenz, Koblenz (Germany)</p>
+              <!-- <p>Specialized in Artificial Intelligence and Machine Learning. Graduated with honors.</p> -->
+            </div>
+
+            <div class="resume-item">
+              <h4>Bachelor of Science in Software Engineering</h4>
+              <h5>2013 - 2017</h5>
+              <p class="company"><i class="bi bi-building"></i> University of Engineering and Technology, Taxila (Pakistan)</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Intermediate Education</h4>
+              <h5>2010 - 2012</h5>
+              <p class="company"><i class="bi bi-building"></i> Superior College, Gujranwala (Pakistan)</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Secondary School Education</h4>
+              <h5>2008 - 2010</h5>
+              <p class="company"><i class="bi bi-building"></i> The Educator’s, Gujranwala (Pakistan)</p>
+            </div>
+          </div>
+
+          <!-- Certifications Section -->
+          <!-- <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+            <h3><i class="bi bi-award me-2"></i>Certifications</h3>
+
+            <div class="resume-item">
+              <h4>AWS Certified Solutions Architect - Professional</h4>
+              <h5>2023</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>Google Cloud Professional Architect</h4>
+              <h5>2022</h5>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Resume Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Need assistance? I am here to help with any questions or concerns you may have.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="info-box">
+            <h3>Contact Info</h3>
+            <p>Reach out via phone or email. I am always happy to assist.</p>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="content">
+                <h4>My Location</h4>
+                <p>Herberichstraße 56</p>
+                <p>56070, Koblenz</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="content">
+                <h4>Phone Number</h4>
+                <p>+49 179 4394022</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-box">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="content">
+                <h4>Email Address</h4>
+                <p>rynkhn4@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-form">
+            <h3>Get In Touch</h3>
+            <p>Fill out the form below and I will respond promptly.</p>
+
+            <form (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" ngModel required #name="ngModel">
+                  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error-message">
+                    Name is required.
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" ngModel required email #email="ngModel">
+                  <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error-message">
+                    <div *ngIf="email.errors?.['required']">Email is required.</div>
+                    <div *ngIf="email.errors?.['email']">Enter a valid email address.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" ngModel required #subject="ngModel">
+                  <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="error-message">
+                    Subject is required.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" ngModel required #message="ngModel"></textarea>
+                  <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error-message">
+                    Message is required.
+                  </div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div *ngIf="loading" class="loading">Loading...</div>
+                  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+                  <div *ngIf="successMessage" class="sent-message">{{ successMessage }}</div>
+
+                  <button type="submit" class="btn" [disabled]="loading">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer position-relative">
+
+  <div class="container">
+    <div class="copyright text-center ">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">RynKhn</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </div>
+
+</footer>
+
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+[class.active]="showScrollTop"
+(click)="scrollToTop()">
+<i class="bi bi-arrow-up-short"></i>
+</a>
+
+</body>
